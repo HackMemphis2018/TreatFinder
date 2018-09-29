@@ -51,6 +51,7 @@ PODS:
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
   - Protobuf (3.6.0)
+  - Pulley (2.4.3)
 
 DEPENDENCIES:
   - Firebase
@@ -58,6 +59,7 @@ DEPENDENCIES:
   - Firebase/Crash
   - Firebase/Database
   - GeoFire
+  - Pulley
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -74,6 +76,7 @@ SPEC REPOS:
     - leveldb-library
     - nanopb
     - Protobuf
+    - Pulley
 
 SPEC CHECKSUMS:
   Firebase: 355bd535bfdacaa82a7fe8d9784115edefd6fc03
@@ -89,7 +92,8 @@ SPEC CHECKSUMS:
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
   Protobuf: 0fc0ad8bec688b2a3017a139953e01374fedbd5f
+  Pulley: 8da0464c517b66e0c17035e23bfa432e6dfad265
 
-PODFILE CHECKSUM: e020626abf4af745ad8b2ae7762984f739b26b8d
+PODFILE CHECKSUM: ea0e6efe61ff8b1c6efcbbe3be9cde97709572e9
 
 COCOAPODS: 1.5.3

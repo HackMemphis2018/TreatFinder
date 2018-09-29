@@ -9,4 +9,5 @@ target 'TreatFinder' do
   pod 'Firebase/Crash'
   pod 'Firebase/Database'
   pod 'GeoFire'
+  pod 'Pulley'
 end
