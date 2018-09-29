@@ -1,4 +1,5 @@
 PODS:
+  - CodableFirebase (0.2.0)
   - Firebase (5.4.1):
     - Firebase/Core (= 5.4.1)
   - Firebase/Auth (5.4.1):
@@ -54,6 +55,7 @@ PODS:
   - Pulley (2.4.3)
 
 DEPENDENCIES:
+  - CodableFirebase
   - Firebase
   - Firebase/Auth
   - Firebase/Crash
@@ -63,6 +65,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - CodableFirebase
     - Firebase
     - FirebaseAnalytics
     - FirebaseAuth
@@ -79,6 +82,7 @@ SPEC REPOS:
     - Pulley
 
 SPEC CHECKSUMS:
+  CodableFirebase: 4b865f58c583a6c0ef8c81c6b12c6bf15ebd9181
   Firebase: 355bd535bfdacaa82a7fe8d9784115edefd6fc03
   FirebaseAnalytics: b3628aea54c50464c32c393fb2ea032566e7ecc2
   FirebaseAuth: 096e457cdd4274412a66c4a35874787e411f5a03
@@ -94,6 +98,6 @@ SPEC CHECKSUMS:
   Protobuf: 0fc0ad8bec688b2a3017a139953e01374fedbd5f
   Pulley: 8da0464c517b66e0c17035e23bfa432e6dfad265
 
-PODFILE CHECKSUM: ea0e6efe61ff8b1c6efcbbe3be9cde97709572e9
+PODFILE CHECKSUM: 07a840142f6e897d3a8de4a9a335c48086132c8b
 
 COCOAPODS: 1.5.3

@@ -13,6 +13,10 @@
 		8A44E2AC215F1CA10007A282 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A44E2AA215F1CA10007A282 /* Main.storyboard */; };
 		8A44E2AE215F1CA10007A282 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A44E2AD215F1CA10007A282 /* Assets.xcassets */; };
 		8A44E2B1215F1CA10007A282 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A44E2AF215F1CA10007A282 /* LaunchScreen.storyboard */; };
+		8A8196C0215FD68E0031A935 /* HouseListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8196BF215FD68E0031A935 /* HouseListController.swift */; };
+		8A8196C2215FD6990031A935 /* HouseMapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8196C1215FD6990031A935 /* HouseMapController.swift */; };
+		8A8196C4215FE0A10031A935 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8A8196C3215FE0A10031A935 /* GoogleService-Info.plist */; };
+		8A8196C6215FE16C0031A935 /* HouseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8196C5215FE16B0031A935 /* HouseModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		8A44E2AD215F1CA10007A282 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A44E2B0215F1CA10007A282 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A44E2B2215F1CA10007A282 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A8196BF215FD68E0031A935 /* HouseListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseListController.swift; sourceTree = "<group>"; };
+		8A8196C1215FD6990031A935 /* HouseMapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseMapController.swift; sourceTree = "<group>"; };
+		8A8196C3215FE0A10031A935 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8A8196C5215FE16B0031A935 /* HouseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,12 +77,16 @@
 		8A44E2A5215F1CA10007A282 /* TreatFinder */ = {
 			isa = PBXGroup;
 			children = (
+				8A8196C5215FE16B0031A935 /* HouseModel.swift */,
 				8A44E2A6215F1CA10007A282 /* AppDelegate.swift */,
 				8A44E2A8215F1CA10007A282 /* ViewController.swift */,
 				8A44E2AA215F1CA10007A282 /* Main.storyboard */,
+				8A8196BF215FD68E0031A935 /* HouseListController.swift */,
+				8A8196C1215FD6990031A935 /* HouseMapController.swift */,
 				8A44E2AD215F1CA10007A282 /* Assets.xcassets */,
 				8A44E2AF215F1CA10007A282 /* LaunchScreen.storyboard */,
 				8A44E2B2215F1CA10007A282 /* Info.plist */,
+				8A8196C3215FE0A10031A935 /* GoogleService-Info.plist */,
 			);
 			path = TreatFinder;
 			sourceTree = "<group>";
@@ -153,6 +165,7 @@
 				8A44E2B1215F1CA10007A282 /* LaunchScreen.storyboard in Resources */,
 				8A44E2AE215F1CA10007A282 /* Assets.xcassets in Resources */,
 				8A44E2AC215F1CA10007A282 /* Main.storyboard in Resources */,
+				8A8196C4215FE0A10031A935 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,6 +181,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TreatFinder/Pods-TreatFinder-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CodableFirebase/CodableFirebase.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
@@ -179,6 +193,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CodableFirebase.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
@@ -220,6 +235,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A8196C0215FD68E0031A935 /* HouseListController.swift in Sources */,
+				8A8196C6215FE16C0031A935 /* HouseModel.swift in Sources */,
+				8A8196C2215FD6990031A935 /* HouseMapController.swift in Sources */,
 				8A44E2A9215F1CA10007A282 /* ViewController.swift in Sources */,
 				8A44E2A7215F1CA10007A282 /* AppDelegate.swift in Sources */,
 			);

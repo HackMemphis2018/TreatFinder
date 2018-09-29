@@ -24,31 +24,49 @@
                                     <segue destination="Oa7-ta-spa" kind="embed" id="Nrr-cI-qqO"/>
                                 </connections>
                             </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cRQ-Ex-47S">
+                                <rect key="frame" x="0.0" y="334" width="375" height="333"/>
+                                <connections>
+                                    <segue destination="LWZ-7w-NMA" kind="embed" id="n9L-Lx-dRY"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="zUg-tj-bv4" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="1E6-1F-Ugc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zUg-tj-bv4" secondAttribute="bottom" constant="332" id="829-4l-5CP"/>
+                            <constraint firstItem="cRQ-Ex-47S" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="314" id="9QJ-gf-d38"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="zUg-tj-bv4" secondAttribute="top" constant="20" id="Mo8-Dq-mZq"/>
+                            <constraint firstItem="cRQ-Ex-47S" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="NaF-KO-0KV"/>
                             <constraint firstItem="zUg-tj-bv4" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Ou0-nr-EUc"/>
+                            <constraint firstItem="cRQ-Ex-47S" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="aAH-RD-jez"/>
                             <constraint firstItem="zUg-tj-bv4" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="eq1-57-M4T"/>
+                            <constraint firstItem="cRQ-Ex-47S" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="fiw-9T-b8K"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="drawerContentContainerView" destination="cRQ-Ex-47S" id="TZl-Nw-7PE"/>
+                        <outlet property="primaryContentContainerView" destination="zUg-tj-bv4" id="ugr-fZ-7LH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
-        <!--View Controller-->
+        <!--House Map Controller-->
         <scene sceneID="Osh-Ik-3Wz">
             <objects>
-                <viewController id="Oa7-ta-spa" sceneMemberID="viewController">
+                <viewController id="Oa7-ta-spa" customClass="HouseMapController" customModule="TreatFinder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qEi-WD-ZJc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="335"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="N6X-4p-1pw">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="335"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Oa7-ta-spa" id="QAH-TT-0xu"/>
+                                </connections>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -60,10 +78,50 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="GEn-5u-y4S"/>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="N6X-4p-1pw" id="xIp-de-2mF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CEI-0z-xIH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="969" y="-16"/>
+            <point key="canvasLocation" x="969" y="-44"/>
+        </scene>
+        <!--House List Controller-->
+        <scene sceneID="uGJ-gK-5cA">
+            <objects>
+                <tableViewController id="LWZ-7w-NMA" customClass="HouseListController" customModule="TreatFinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="9MT-Zc-EBw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="333"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="houseCell" textLabel="XWY-EJ-D7a" style="IBUITableViewCellStyleDefault" id="8zO-x2-j7G">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8zO-x2-j7G" id="ZJb-MP-oVG">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="XWY-EJ-D7a">
+                                            <rect key="frame" x="16" y="0.0" width="343" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="LWZ-7w-NMA" id="gCs-Cf-JxA"/>
+                            <outlet property="delegate" destination="LWZ-7w-NMA" id="lE6-t0-fFq"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZFh-GL-Pl6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="969" y="343"/>
         </scene>
     </scenes>
 </document>
