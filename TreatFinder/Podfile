@@ -8,7 +8,9 @@ target 'TreatFinder' do
   pod 'Firebase/Auth'
   pod 'Firebase/Crash'
   pod 'Firebase/Database'
+  pod 'Firebase/Firestore'
   pod 'GeoFire'
   pod 'Pulley'
-   pod 'CodableFirebase'
+  pod 'Cosmos'
+  pod 'CodableFirebase'
 end

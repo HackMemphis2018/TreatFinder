@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		2836B15B5CEBE5B1BD6D08A7 /* Pods_TreatFinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 584D8F541DC9618946BF3E82 /* Pods_TreatFinder.framework */; };
 		8A44E2A7215F1CA10007A282 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A44E2A6215F1CA10007A282 /* AppDelegate.swift */; };
-		8A44E2A9215F1CA10007A282 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A44E2A8215F1CA10007A282 /* ViewController.swift */; };
 		8A44E2AC215F1CA10007A282 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A44E2AA215F1CA10007A282 /* Main.storyboard */; };
 		8A44E2AE215F1CA10007A282 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A44E2AD215F1CA10007A282 /* Assets.xcassets */; };
 		8A44E2B1215F1CA10007A282 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A44E2AF215F1CA10007A282 /* LaunchScreen.storyboard */; };
@@ -17,6 +16,15 @@
 		8A8196C2215FD6990031A935 /* HouseMapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8196C1215FD6990031A935 /* HouseMapController.swift */; };
 		8A8196C4215FE0A10031A935 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8A8196C3215FE0A10031A935 /* GoogleService-Info.plist */; };
 		8A8196C6215FE16C0031A935 /* HouseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8196C5215FE16B0031A935 /* HouseModel.swift */; };
+		8A8196C8215FECB20031A935 /* HouseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8196C7215FECB20031A935 /* HouseManager.swift */; };
+		8A8196CA215FEFA60031A935 /* HousePoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8196C9215FEFA60031A935 /* HousePoint.swift */; };
+		8AC16C0A215FFAFC00A201D1 /* KABMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC16C08215FFAFC00A201D1 /* KABMapView.swift */; };
+		8AC16C0B215FFAFC00A201D1 /* KABRoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC16C09215FFAFC00A201D1 /* KABRoundedButton.swift */; };
+		8AC16C1021600C5F00A201D1 /* KABAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC16C0F21600C5F00A201D1 /* KABAnnotation.swift */; };
+		8AC16C142160132200A201D1 /* Annotation.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AC16C132160132200A201D1 /* Annotation.xib */; };
+		8AC16C162160262800A201D1 /* InfoCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC16C152160262800A201D1 /* InfoCardController.swift */; };
+		8AC16C182160285C00A201D1 /* KABRoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC16C172160285C00A201D1 /* KABRoundButton.swift */; };
+		8AC16C1A2160286300A201D1 /* KABGrabber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC16C192160286300A201D1 /* KABGrabber.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +33,6 @@
 		6CC7EC0B67102B3FFEBEF4C9 /* Pods-TreatFinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TreatFinder.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TreatFinder/Pods-TreatFinder.debug.xcconfig"; sourceTree = "<group>"; };
 		8A44E2A3215F1CA10007A282 /* TreatFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TreatFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A44E2A6215F1CA10007A282 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8A44E2A8215F1CA10007A282 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8A44E2AB215F1CA10007A282 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8A44E2AD215F1CA10007A282 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A44E2B0215F1CA10007A282 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -34,6 +41,15 @@
 		8A8196C1215FD6990031A935 /* HouseMapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseMapController.swift; sourceTree = "<group>"; };
 		8A8196C3215FE0A10031A935 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8A8196C5215FE16B0031A935 /* HouseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseModel.swift; sourceTree = "<group>"; };
+		8A8196C7215FECB20031A935 /* HouseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseManager.swift; sourceTree = "<group>"; };
+		8A8196C9215FEFA60031A935 /* HousePoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HousePoint.swift; sourceTree = "<group>"; };
+		8AC16C08215FFAFC00A201D1 /* KABMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KABMapView.swift; sourceTree = "<group>"; };
+		8AC16C09215FFAFC00A201D1 /* KABRoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KABRoundedButton.swift; sourceTree = "<group>"; };
+		8AC16C0F21600C5F00A201D1 /* KABAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KABAnnotation.swift; sourceTree = "<group>"; };
+		8AC16C132160132200A201D1 /* Annotation.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Annotation.xib; sourceTree = "<group>"; };
+		8AC16C152160262800A201D1 /* InfoCardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCardController.swift; sourceTree = "<group>"; };
+		8AC16C172160285C00A201D1 /* KABRoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KABRoundButton.swift; sourceTree = "<group>"; };
+		8AC16C192160286300A201D1 /* KABGrabber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KABGrabber.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,18 +93,50 @@
 		8A44E2A5215F1CA10007A282 /* TreatFinder */ = {
 			isa = PBXGroup;
 			children = (
-				8A8196C5215FE16B0031A935 /* HouseModel.swift */,
-				8A44E2A6215F1CA10007A282 /* AppDelegate.swift */,
-				8A44E2A8215F1CA10007A282 /* ViewController.swift */,
-				8A44E2AA215F1CA10007A282 /* Main.storyboard */,
-				8A8196BF215FD68E0031A935 /* HouseListController.swift */,
-				8A8196C1215FD6990031A935 /* HouseMapController.swift */,
 				8A44E2AD215F1CA10007A282 /* Assets.xcassets */,
+				8A44E2AA215F1CA10007A282 /* Main.storyboard */,
 				8A44E2AF215F1CA10007A282 /* LaunchScreen.storyboard */,
-				8A44E2B2215F1CA10007A282 /* Info.plist */,
 				8A8196C3215FE0A10031A935 /* GoogleService-Info.plist */,
+				8A44E2B2215F1CA10007A282 /* Info.plist */,
+				8A44E2A6215F1CA10007A282 /* AppDelegate.swift */,
+				8AC16C0E215FFD0D00A201D1 /* KAB Libraries */,
+				8AC16C0D215FFD0100A201D1 /* View Controllers */,
+				8AC16C0C215FFCFA00A201D1 /* Houses */,
 			);
 			path = TreatFinder;
+			sourceTree = "<group>";
+		};
+		8AC16C0C215FFCFA00A201D1 /* Houses */ = {
+			isa = PBXGroup;
+			children = (
+				8A8196C5215FE16B0031A935 /* HouseModel.swift */,
+				8A8196C7215FECB20031A935 /* HouseManager.swift */,
+				8A8196C9215FEFA60031A935 /* HousePoint.swift */,
+			);
+			path = Houses;
+			sourceTree = "<group>";
+		};
+		8AC16C0D215FFD0100A201D1 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8A8196BF215FD68E0031A935 /* HouseListController.swift */,
+				8A8196C1215FD6990031A935 /* HouseMapController.swift */,
+				8AC16C152160262800A201D1 /* InfoCardController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		8AC16C0E215FFD0D00A201D1 /* KAB Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				8AC16C08215FFAFC00A201D1 /* KABMapView.swift */,
+				8AC16C09215FFAFC00A201D1 /* KABRoundedButton.swift */,
+				8AC16C0F21600C5F00A201D1 /* KABAnnotation.swift */,
+				8AC16C132160132200A201D1 /* Annotation.xib */,
+				8AC16C172160285C00A201D1 /* KABRoundButton.swift */,
+				8AC16C192160286300A201D1 /* KABGrabber.swift */,
+			);
+			path = "KAB Libraries";
 			sourceTree = "<group>";
 		};
 		EB2187CDC69C436335531DCD /* Pods */ = {
@@ -166,6 +214,7 @@
 				8A44E2AE215F1CA10007A282 /* Assets.xcassets in Resources */,
 				8A44E2AC215F1CA10007A282 /* Main.storyboard in Resources */,
 				8A8196C4215FE0A10031A935 /* GoogleService-Info.plist in Resources */,
+				8AC16C142160132200A201D1 /* Annotation.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,11 +230,17 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TreatFinder/Pods-TreatFinder-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
 				"${BUILT_PRODUCTS_DIR}/CodableFirebase/CodableFirebase.framework",
+				"${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/Pulley/Pulley.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -193,11 +248,17 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CodableFirebase.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cosmos.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Pulley.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -237,9 +298,16 @@
 			files = (
 				8A8196C0215FD68E0031A935 /* HouseListController.swift in Sources */,
 				8A8196C6215FE16C0031A935 /* HouseModel.swift in Sources */,
+				8AC16C0A215FFAFC00A201D1 /* KABMapView.swift in Sources */,
+				8AC16C182160285C00A201D1 /* KABRoundButton.swift in Sources */,
 				8A8196C2215FD6990031A935 /* HouseMapController.swift in Sources */,
-				8A44E2A9215F1CA10007A282 /* ViewController.swift in Sources */,
+				8AC16C1021600C5F00A201D1 /* KABAnnotation.swift in Sources */,
+				8AC16C0B215FFAFC00A201D1 /* KABRoundedButton.swift in Sources */,
+				8A8196CA215FEFA60031A935 /* HousePoint.swift in Sources */,
+				8A8196C8215FECB20031A935 /* HouseManager.swift in Sources */,
 				8A44E2A7215F1CA10007A282 /* AppDelegate.swift in Sources */,
+				8AC16C1A2160286300A201D1 /* KABGrabber.swift in Sources */,
+				8AC16C162160262800A201D1 /* InfoCardController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,6 +450,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JMQ9Y3A8K6;
 				INFOPLIST_FILE = TreatFinder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yeet.TreatFinder;
@@ -397,6 +466,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JMQ9Y3A8K6;
 				INFOPLIST_FILE = TreatFinder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yeet.TreatFinder;

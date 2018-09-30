@@ -3,7 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>i dont know</string>
+	<string>UH</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>House hunting</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>

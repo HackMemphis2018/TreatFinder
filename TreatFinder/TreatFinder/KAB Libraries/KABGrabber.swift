@@ -1,5 +1,5 @@
 //
-//  HouseModel.swift
+//  KABGrabber.swift
 //  TreatFinder
 //
 //  Created by Keaton Burleson on 9/29/18.
@@ -7,11 +7,3 @@
 //
 
 import Foundation
-
-struct HouseModel: Codable{
-    var lat: Double?
-    var long: Double?
-    var name: String?
-    
-    
-}

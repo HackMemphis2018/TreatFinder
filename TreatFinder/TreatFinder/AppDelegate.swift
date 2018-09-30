@@ -18,7 +18,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         FirebaseApp.configure()
-        Database.database().isPersistenceEnabled = true
+        
+        Auth.auth().signIn(withEmail: "test@me.com", password: "abc123") { (user, error) in
+            if(error == nil){
+                print(user!)
+            }
+        }
+
         return true
     }
 
@@ -47,3 +53,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+extension Double {
+    /// Rounds the double to decimal places value
+    func rounded(toPlaces places:Int) -> Double {
+        let divisor = pow(10.0, Double(places))
+        return (self * divisor).rounded() / divisor
+    }
+}
